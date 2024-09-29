@@ -1,5 +1,8 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using System.Diagnostics;
+using GamingTaskKiller.information_gathering;
 
-Console.WriteLine("Hello, World!");
+var lister = new ProcessLister();
 
+var processes = lister.GetProcesses();
 
+var i = 0;
